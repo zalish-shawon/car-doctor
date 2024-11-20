@@ -1,6 +1,9 @@
 import React from 'react';
+import { services } from '@/lib/services';
+import ServiceCards from '../cards/ServiceCards';
 
 const Services = () => {
+    
     return (
         <div>
             <div className="text-slate-800 mb-24">
@@ -13,6 +16,13 @@ const Services = () => {
                                     believable.{" "}
                                 </p>
                 </div>
+            </div>
+            <div className='container mx-auto mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6'>
+                {
+                    services.map((service) => (
+                        <ServiceCards key={service._id} service={service}></ServiceCards>
+                    ))
+                }
             </div>
         </div>
     );
