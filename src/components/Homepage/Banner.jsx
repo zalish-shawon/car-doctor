@@ -38,7 +38,7 @@ const banners = [
   },
   {
     title: "Affordable Price For Car Servicing",
-    description: "There are many variations of passages of  available, but the majority have suffered alteration in some form",
+    description: "There are many variations of passages of available, but the majority have suffered alteration in some form",
     next: "#slide3",
     prev: "#slide1",
   },
